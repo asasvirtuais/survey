@@ -1,5 +1,6 @@
 import initAirtable from 'asasvirtuais/airtable'
-import schema from './database'
+import { schema } from './database'
+
 const apiKey = process.env.AIRTABLE_API_TOKEN
 
 if (! apiKey)

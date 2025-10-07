@@ -1,4 +1,4 @@
-import { safe } from '@/app/database'
+import { safe } from '@/app/server'
 import { createDynamicRoute } from 'asasvirtuais/next-interface'
 
 export const GET = createDynamicRoute(safe)

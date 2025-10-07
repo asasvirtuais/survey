@@ -1,14 +1,9 @@
 import { Button, Card, Container, Heading, Stack } from '@chakra-ui/react'
 import Link from 'next/link'
+import { tables } from './server'
 
-const surveys = [
-  { title: 'Survey One' },
-  { title: 'Survey Two' },
-  { title: 'Survey Three' },
-  { title: 'Survey Four' },
-]
-
-export default function Home() {
+export default async function Home() {
+  const surveys = await tables.surveys.list({})
 
   return (
     <Container maxW='breakpoint-sm'>
