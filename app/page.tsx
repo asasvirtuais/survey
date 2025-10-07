@@ -14,12 +14,12 @@ export default async function Home() {
             <Card.Body>
               <Card.Title>{survey.title}</Card.Title>
               <Card.Description>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi fugiat repellendus ipsam, aspernatur libero nisi pariatur, eligendi iure, saepe maxime asperiores aperiam. Quis facilis voluptatum, cupiditate et incidunt sapiente.
+                {survey.description}
               </Card.Description>
             </Card.Body>
             <Card.Footer justifyContent='flex-end'>
               <Button variant='outline' asChild>
-                <Link href='#'>View</Link>
+                <Link href={`/survey/${survey.id}`}>View</Link>
               </Button>
             </Card.Footer>
           </Card.Root>
