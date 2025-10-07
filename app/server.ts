@@ -3,6 +3,7 @@ import { base } from './airtable'
 import { schema } from './database'
 
 export async function authenticate(): Promise<User> {
+    return { id: 'reciKvLGEyDkIIoAi', name: 'Bob' }
     throw new Error('Not Implemented')
 }
 
@@ -25,7 +26,7 @@ export const safe = {
 
         /** Only the user can read his own data */
         if (props.table === 'answers')
-            if ((result as Answer).user !== user.id)
+            if ((result as Answer).userId !== user.id)
                 throw new Error('Unauthorized')
 
         return result
@@ -38,7 +39,7 @@ export const safe = {
             throw new Error('Unauthorized')
         /** Answers must belong to the user */
         if (props.table === 'answers')
-            (props as ListProps<Answer>).query = { user: user.id }
+            (props as ListProps<Answer>).query = { userId: user.id }
 
         return unsafe.list(props)
     },
@@ -51,7 +52,7 @@ export const safe = {
         }
 
         /** Ensure the created answer belongs to the authenticated user */
-        (props.data as Partial<Answer>).user = user.id
+        (props.data as Partial<Answer>).userId = user.id
 
         /** Parse the user input */
         props.data = schema.answers.writable.parse(props.data)
@@ -71,5 +72,7 @@ export const safe = {
 } as typeof unsafe
 
 export const tables = {
-    surveys: base.interface('survey')
+    surveys: base.interface('surveys'),
+    questions: base.interface('questions'),
+    answers: base.interface('answers'),
 }

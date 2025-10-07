@@ -14,7 +14,7 @@ export const SurveySchema = z.object({
 
 export const QuestionSchema = z.object({
     id: z.string(),
-    survey: z.string(),
+    surveyId: z.string(),
     title: z.string(),
     description: z.string(),
     /** Hide this from being read by the users */
@@ -23,9 +23,14 @@ export const QuestionSchema = z.object({
 
 export const AnswerSchema = z.object({
     id: z.string(),
-    user: z.string(),
-    question: z.string(),
+    user: z.string().array(),
+    userId: z.string(),
+    question: z.string().array(),
+    questionId: z.string(),
+    survey: z.string().array(),
+    surveyId: z.string(),
     text: z.string(),
+    submitted: z.boolean(),
 })
 
 declare global {
@@ -40,7 +45,7 @@ export const schema = {
         readable: UserSchema,
         writable: UserSchema.omit({id: true}),
     },
-    survey: {
+    surveys: {
         readable: SurveySchema,
         writable: SurveySchema,
     },
@@ -50,6 +55,6 @@ export const schema = {
     },
     answers: {
         readable: AnswerSchema,
-        writable: AnswerSchema.omit({id: true}),
+        writable: AnswerSchema.omit({id: true, survey: true, surveyId: true, questionId: true, userId: true}),
     }
 }
