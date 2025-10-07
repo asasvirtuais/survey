@@ -1,5 +1,5 @@
-import initAirtable from '@/lib/airtable'
-
+import initAirtable from 'asasvirtuais/airtable'
+import schema from './database'
 const apiKey = process.env.AIRTABLE_API_TOKEN
 
 if (! apiKey)
@@ -7,18 +7,6 @@ if (! apiKey)
 
 const airtable = initAirtable(apiKey)
 
-const base = airtable.base<{
-    Users: User,
-    Surveys: Survey,
-    Questions: Question,
-    Answers: Answer,
-}>('appQsHUFPsY0GwJ1q')
-
-export const tables = {
-    users: base.interface('Users'),
-    surveys: base.interface('Surveys'),
-    questions: base.interface('Questions'),
-    answers: base.interface('Answers'),
-}
+export const base = airtable.base('appQsHUFPsY0GwJ1q', schema)
 
 export default airtable
