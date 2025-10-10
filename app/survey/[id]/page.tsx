@@ -13,7 +13,7 @@ export default function Survey() {
     return (
         <SingleProvider table='surveys' id={id as string}>
             {({single: survey}) => (
-                <Stack maxW='breakpoint-sm' py={4} gap={4} mx='auto'>
+                <Stack maxW='breakpoint-sm' py={4} gap={4} mx='auto' minH='100lvh' justify='center'>
                     <Heading>{survey.title}</Heading>
                     <Text>{survey.description}</Text>
                     <SurveyQuestions user={user}/>

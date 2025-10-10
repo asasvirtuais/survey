@@ -14,12 +14,9 @@ importers:
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.2.2)(react@19.2.0)
-      airtable:
-        specifier: ^0.12.2
-        version: 0.12.2
       asasvirtuais:
-        specifier: ^0.7.13
-        version: 0.7.13(@opentelemetry/api@1.9.0)(@types/node@24.7.0)(@types/react@19.2.2)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(pg@8.16.3)(typescript@5.9.3)(wretch@2.11.0)(zod@4.1.12)
+        specifier: ^0.7.17
+        version: 0.7.17(@opentelemetry/api@1.9.0)(@types/node@24.7.0)(@types/react@19.2.2)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(pg@8.16.3)(typescript@5.9.3)(wretch@2.11.0)(zod@4.1.12)
       next:
         specifier: 15.5.4
         version: 15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -1215,9 +1212,6 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
-  '@types/node@14.18.63':
-    resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
-
   '@types/node@22.18.8':
     resolution: {integrity: sha512-pAZSHMiagDR7cARo/cch1f3rXy0AEXwsVsVH09FcyeJVAzCnGgmYis7P3JidtTUjyadhTeSo8TgRPswstghDaw==}
 
@@ -1493,9 +1487,6 @@ packages:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
     engines: {node: '>=6.5'}
 
-  abortcontroller-polyfill@1.7.8:
-    resolution: {integrity: sha512-9f1iZ2uWh92VcrU9Y8x+LdM4DLj75VE0MJB8zuF1iUnroEptStw+DQ8EQPMUdfe5k+PkB1uUfDQfWbhstH8LrQ==}
-
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
@@ -1509,10 +1500,6 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
-
-  airtable@0.12.2:
-    resolution: {integrity: sha512-HS3VytUBTKj8A0vPl7DDr5p/w3IOGv6RXL0fv7eczOWAtj9Xe8ri4TAiZRXoOyo+Z/COADCj+oARFenbxhmkIg==}
-    engines: {node: '>=8.0.0'}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1535,8 +1522,8 @@ packages:
   asasvirtuais@0.4.4:
     resolution: {integrity: sha512-sWWUL9RdBOEFhQB7G0VI2vnu7qG7IR6IqrleZP/KXnPUXt0SY9RfRUlYP18OkTAIXh5+jkeMMQMPM6jR70cXrQ==}
 
-  asasvirtuais@0.7.13:
-    resolution: {integrity: sha512-Oid+8F7CcBz+sKrsvR6Bp6BP8l8oPEpIpTkmYTvVGqoXkJMN8WXpNbe9bPDYYUJRrecjS5I3ytv6KjTt0w+Pgw==}
+  asasvirtuais@0.7.17:
+    resolution: {integrity: sha512-7SvPw+yVQgHuVe89N7vRIQDulUtMA79jpR7MPbDl/3z/n2MCwmSSmsbwpe27HDKXSYAM5+W3Z9MRQRJrzGKVJA==}
     peerDependencies:
       next: 15.6.0-canary.34
       wretch: ^2.11.0
@@ -3328,16 +3315,6 @@ snapshots:
       react: 19.2.0
       zod: 4.1.12
 
-  '@asasvirtuais/crud@https://codeload.github.com/asasvirtuais/crud/tar.gz/bec56b2eb3906ad5e440705648edb97a78b6eefc(@asasvirtuais/airtable@3.0.3)(@asasvirtuais/react@0.0.0)(ai@5.0.60(zod@4.1.12))(firebase-admin@13.5.0)(next@15.6.0-canary.34(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)(zod@3.25.76)':
-    optionalDependencies:
-      '@asasvirtuais/airtable': https://codeload.github.com/asasvirtuais/airtable/tar.gz/4704bd7581bd385d7a3de2c85e4360be75239692(@asasvirtuais/crud@1.0.0)
-      '@asasvirtuais/react': https://codeload.github.com/asasvirtuais/react/tar.gz/f32c44abd3df40e562e492615f485bcf6fe1c190(@asasvirtuais/crud@1.0.0)
-      ai: 5.0.60(zod@4.1.12)
-      firebase-admin: 13.5.0
-      next: 15.6.0-canary.34(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      react: 19.2.0
-      zod: 3.25.76
-
   '@asasvirtuais/react@https://codeload.github.com/asasvirtuais/react/tar.gz/f32c44abd3df40e562e492615f485bcf6fe1c190(@asasvirtuais/crud@1.0.0)':
     dependencies:
       '@asasvirtuais/crud': https://codeload.github.com/asasvirtuais/crud/tar.gz/bec56b2eb3906ad5e440705648edb97a78b6eefc(@asasvirtuais/airtable@3.0.3)(@asasvirtuais/react@0.0.0)(ai@5.0.60(zod@4.1.12))(firebase-admin@13.5.0)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)(zod@4.1.12)
@@ -4403,8 +4380,6 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@14.18.63': {}
-
   '@types/node@22.18.8':
     dependencies:
       undici-types: 6.21.0
@@ -4978,8 +4953,6 @@ snapshots:
     dependencies:
       event-target-shim: 5.0.1
 
-  abortcontroller-polyfill@1.7.8: {}
-
   agent-base@6.0.2:
     dependencies:
       debug: 4.4.3
@@ -5003,16 +4976,6 @@ snapshots:
       '@ai-sdk/provider-utils': 3.0.10(zod@4.1.12)
       '@opentelemetry/api': 1.9.0
       zod: 4.1.12
-
-  airtable@0.12.2:
-    dependencies:
-      '@types/node': 14.18.63
-      abort-controller: 3.0.0
-      abortcontroller-polyfill: 1.7.8
-      lodash: 4.17.21
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
 
   ansi-regex@5.0.1: {}
 
@@ -5172,7 +5135,7 @@ snapshots:
       '@ai-sdk/react': 2.0.60(react@19.2.0)(zod@3.25.76)
       '@asasvirtuais/airtable': https://codeload.github.com/asasvirtuais/airtable/tar.gz/4704bd7581bd385d7a3de2c85e4360be75239692(@asasvirtuais/crud@1.0.0)
       '@asasvirtuais/chat': https://codeload.github.com/asasvirtuais/chat/tar.gz/7fe5e060a1b4c34640ffb719434173f4dec063f5(@types/node@24.7.0)(@types/react@19.2.2)(typescript@5.9.3)
-      '@asasvirtuais/crud': https://codeload.github.com/asasvirtuais/crud/tar.gz/bec56b2eb3906ad5e440705648edb97a78b6eefc(@asasvirtuais/airtable@3.0.3)(@asasvirtuais/react@0.0.0)(ai@5.0.60(zod@4.1.12))(firebase-admin@13.5.0)(next@15.6.0-canary.34(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)(zod@3.25.76)
+      '@asasvirtuais/crud': https://codeload.github.com/asasvirtuais/crud/tar.gz/bec56b2eb3906ad5e440705648edb97a78b6eefc(@asasvirtuais/airtable@3.0.3)(@asasvirtuais/react@0.0.0)(ai@5.0.60(zod@4.1.12))(firebase-admin@13.5.0)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)(zod@4.1.12)
       '@asasvirtuais/react': https://codeload.github.com/asasvirtuais/react/tar.gz/f32c44abd3df40e562e492615f485bcf6fe1c190(@asasvirtuais/crud@1.0.0)
       '@auth0/nextjs-auth0': 4.10.0(next@15.6.0-canary.34(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@chakra-ui/react': 3.27.1(@emotion/react@11.14.0(@types/react@19.2.2)(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -5233,13 +5196,9 @@ snapshots:
       - ws
       - yaml
 
-  asasvirtuais@0.7.13(@opentelemetry/api@1.9.0)(@types/node@24.7.0)(@types/react@19.2.2)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(pg@8.16.3)(typescript@5.9.3)(wretch@2.11.0)(zod@4.1.12):
+  asasvirtuais@0.7.17(@opentelemetry/api@1.9.0)(@types/node@24.7.0)(@types/react@19.2.2)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(pg@8.16.3)(typescript@5.9.3)(wretch@2.11.0)(zod@4.1.12):
     dependencies:
       '@ai-sdk/react': 2.0.60(react@19.2.0)(zod@4.1.12)
-      '@asasvirtuais/airtable': https://codeload.github.com/asasvirtuais/airtable/tar.gz/4704bd7581bd385d7a3de2c85e4360be75239692(@asasvirtuais/crud@1.0.0)
-      '@asasvirtuais/chat': https://codeload.github.com/asasvirtuais/chat/tar.gz/7fe5e060a1b4c34640ffb719434173f4dec063f5(@types/node@24.7.0)(@types/react@19.2.2)(typescript@5.9.3)
-      '@asasvirtuais/crud': https://codeload.github.com/asasvirtuais/crud/tar.gz/bec56b2eb3906ad5e440705648edb97a78b6eefc(@asasvirtuais/airtable@3.0.3)(@asasvirtuais/react@0.0.0)(ai@5.0.60(zod@4.1.12))(firebase-admin@13.5.0)(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)(zod@4.1.12)
-      '@asasvirtuais/react': https://codeload.github.com/asasvirtuais/react/tar.gz/f32c44abd3df40e562e492615f485bcf6fe1c190(@asasvirtuais/crud@1.0.0)
       '@auth0/nextjs-auth0': 4.10.0(next@15.5.4(@opentelemetry/api@1.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@chakra-ui/react': 3.27.1(@emotion/react@11.14.0(@types/react@19.2.2)(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@emotion/react': 11.14.0(@types/react@19.2.2)(react@19.2.0)
